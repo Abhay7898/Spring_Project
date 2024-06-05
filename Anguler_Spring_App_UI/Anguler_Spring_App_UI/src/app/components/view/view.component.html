@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+<h1 class="text-center">Student Details</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>FristName</th>
+    <th>LastName</th>
+    <th>Age</th>
+    <th>Mobile Number</th>
+    <th>EmailId</th>
+    <th>Address</th>
+    <th>UserId</th>
+    <th>Create</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let stu of studentlist ">
+    <td>{{stu.id}}</td>
+    <td>{{stu.firstName}}</td>
+    <td>{{stu.lastName}}</td>
+    <td>{{stu.age}}</td>
+    <td>{{stu.mobileNumber}}</td>
+    <td>{{stu.emailId}}</td>
+    <td>{{stu.address}}</td>
+    <td>{{stu.userId}}</td>
+    <td><button type="button" *ngIf="isLoggedIn" class="create" [routerLink]="'/create'">Create</button></td>
+
+    <td><button style="background-color: #f2971f;"type="button" *ngIf="isLoggedIn" class="updateStudent" (click)="this.updateStudent(stu.id)">Update</button></td>
+
+    <td><button style="background-color: #ed5e68;" type="button" *ngIf="isLoggedIn" class="delete" (click)="this.deleteStudent(stu.id)"> Delete</button></td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

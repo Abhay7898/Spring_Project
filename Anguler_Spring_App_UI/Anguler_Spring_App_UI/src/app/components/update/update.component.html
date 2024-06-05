@@ -1,0 +1,29 @@
+<form (ngSubmit)="onSubmit()">
+    <h1 class="text-center"><b>UPDATE STUDENT</b></h1>
+      <div class="container">
+        <label for="First name"><b>Frist Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="uname" [(ngModel)]='stu.firstName' required>
+    
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="psw" [(ngModel)]='stu.lastName' required>
+        
+        <label for="age"><b>Age</b></label>
+        <input type="text" placeholder="Enter Age" name="age" [(ngModel)]='stu.age' required>
+  
+        <label for="gender"><b>Mobile Number</b></label>
+        <input type="text" placeholder="Enter Mobile Number" name="mobileNumber" [(ngModel)]='stu.mobileNumber' required>
+  
+        <label for="emailId"><b>EmailId</b></label>
+        <input type="text" placeholder="Enter EmailId" name="emailId"[(ngModel)]='stu.emailId' required>
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" placeholder="Enter Address" name="address"[(ngModel)]='stu.address' required>
+
+        <label for="userId"><b>userId
+        </b></label>
+        <input type="text" placeholder="Enter UserId" name="userId"[(ngModel)]='stu.userId' required>
+
+        <button type="submit">Update</button>
+      </div>
+    </form>
+  

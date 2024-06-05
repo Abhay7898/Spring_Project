@@ -1,0 +1,24 @@
+
+<form (ngSubmit)="onSubmit()">
+    <h1 class="text-center">CREATE USER</h1>
+      <div class="container">
+        <label for="userId"><b>UserId</b></label>
+        <input type="text" placeholder="Enter UserId" name="uname" [(ngModel)]='user.userId' required>
+    
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]='user.password' required>
+
+        <label for="password"><b>ConfrimPassword</b></label>
+        <input type="password" placeholder="Confrim Password " name="psw" [(ngModel)]='user.confrimPassword' required>
+
+        <label for="userCode"><b>User Code</b></label>
+        <input type="text" placeholder="Enter userCode" name="userCode" [(ngModel)]='user.userCode' required>
+        <button type="submit">Create</button>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
